@@ -21,3 +21,12 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
+
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
